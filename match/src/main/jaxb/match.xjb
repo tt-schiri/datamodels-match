@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Bindings for refereemanager.
+
+## Legal stuff
+
+Copyright 2016-2016 Ekkart Kleinod <ekleinod@edgesoft.de>
+
+This file is part of refereemanager.
+
+refereemanager is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+refereemanager is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with refereemanager.  If not, see <http://www.gnu.org/licenses/>.
+
+@author Ekkart Kleinod
+@version 0.9.0
+@since 0.4.0
+-->
+
+<jxb:bindings xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+	jxb:version="2.1">
+
+	<!-- bindings for commons -->
+	<jxb:bindings schemaLocation="refereemanager.xsd">
+
+		<!-- implementing classes -->
+		<jxb:bindings node="//xsd:complexType[@name='Address']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.AddressModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='Club']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.ClubModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='Contact']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.ContactModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='Content']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.ContentModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='Date']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.DateModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='EMail']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.EMailModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='League']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.LeagueModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='Person']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.PersonModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='PhoneNumber']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.PhoneNumberModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='Referee']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.RefereeModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='Season']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.SeasonModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='StatusType']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.StatusTypeModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='Team']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.TeamModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='TitledIDType']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.TitledIDTypeModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='Trainee']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.TraineeModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='TrainingLevel']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.TrainingLevelModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='TrainingLevelType']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.TrainingLevelTypeModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='URL']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.URLModel" />
+		</jxb:bindings>
+
+		<jxb:bindings node="//xsd:complexType[@name='Wish']">
+			<jxb:class implClass="de.edgesoft.refereemanager.model.WishModel" />
+		</jxb:bindings>
+
+	</jxb:bindings>
+
+</jxb:bindings>
+
+<!-- EOF -->
+
