@@ -33,15 +33,17 @@ along with TT-Schiri: Data Models - Match.  If not, see <http://www.gnu.org/lice
 
 <project name="match" default="help" basedir=".">
 
-	<property name="edgeutils:path" value="../../../../submodules/edgeutils/jaxb" />
-	<import file="${edgeutils:path}/ant-commons.xml"/>
+	<property name="edgeutils:ant" value="../../../../submodules/edgeutils/ant" />
+	<property name="edgeutils:jaxb" value="../../../../submodules/edgeutils/jaxb" />
+	<import file="${edgeutils:ant}/ant-commons.xml"/>
+	<import file="${edgeutils:ant}/ant-jaxb.xml"/>
 
 	<property name="local:xsd" value="${ant.project.name}.xsd" />
 	<property name="local:outpath" value="../java/" />
 	<property name="local:package" value="de.edgesoft.${ant.project.name}.jaxb" />
 	<property name="local:packagepath" value="${local:outpath}de/edgesoft/${ant.project.name}/jaxb/" />
-	<property name="local:bindings1" value="${edgeutils:path}/commons.xjb" />
-	<property name="local:bindings2" value="${edgeutils:path}/commons-reuse.xjb" />
+	<property name="local:bindings1" value="${edgeutils:jaxb}/commons.xjb" />
+	<property name="local:bindings2" value="${edgeutils:jaxb}/commons-reuse.xjb" />
 	<property name="local:bindings3" value="${ant.project.name}.xjb" />
 
 	<target name="model" description="Removes, then generates the local model classes from xsd.">
